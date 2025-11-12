@@ -1,11 +1,137 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ร้านอร่อยเด็ด</title>
+    <style>
+        body {
+            font-family: "Prompt", sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+            color: #333;
+        }
+        header {
+            background-color: #d84315;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #ff7043;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            background-color: #e64a19;
+        }
+        .hero {
+            background-image: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+            font-size: 2em;
+        }
+        .menu {
+            padding: 40px;
+            text-align: center;
+        }
+        .menu h2 {
+            color: #d84315;
+            margin-bottom: 20px;
+        }
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            width: 250px;
+            padding: 15px;
+        }
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .contact {
+            background-color: #ffe0b2;
+            padding: 40px;
+            text-align: center;
+        }
+        footer {
+            background-color: #d84315;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-     เกน
+
+    <header>
+        <h1>ร้านอร่อยเด็ด</h1>
+        <p>อาหารไทยแท้ รสชาติถึงใจ</p>
+    </header>
+
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#menu">เมนู</a>
+        <a href="#contact">ติดต่อเรา</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>ยินดีต้อนรับสู่ร้านอร่อยเด็ด!</h2>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>เมนูแนะนำ</h2>
+        <div class="menu-items">
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092" alt="ผัดไทย">
+                <h3>ผัดไทยกุ้งสด</h3>
+                <p>เส้นเหนียวนุ่ม กุ้งสดตัวโต พร้อมซอสสูตรพิเศษ</p>
+                <p><strong>ราคา: 80 บาท</strong></p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1625940434265-4e9a7239d3d5" alt="ต้มยำกุ้ง">
+                <h3>ต้มยำกุ้ง</h3>
+                <p>รสชาติจัดจ้าน หอมสมุนไพรไทยแท้</p>
+                <p><strong>ราคา: 120 บาท</strong></p>
+            </div>
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2" alt="แกงเขียวหวาน">
+                <h3>แกงเขียวหวานไก่</h3>
+                <p>เข้มข้นด้วยกะทิ หอมพริกแกงสดใหม่</p>
+                <p><strong>ราคา: 90 บาท</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>ติดต่อเรา</h2>
+        <p>📍 123 ถนนสุขุมวิท แขวงคลองตัน กรุงเทพฯ</p>
+        <p>☎️ 081-234-5678</p>
+        <p>🕓 เปิดทุกวัน 10:00 - 22:00 น.</p>
+    </section>
+
+    <footer>
+        <p>© 2025 ร้านอร่อยเด็ด | พัฒนาโดย ChatGPT</p>
+    </footer>
+
 </body>
 </html>
