@@ -1,11 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="th">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>เที่ยวเลย</title>
+
+    <style>
+        /* ใช้ฟอนต์ที่อ่านง่าย และตั้งค่าพื้นฐาน */
+        body {
+            font-family: Arial, sans-serif; /* เลือกฟอนต์ */
+            background-color: #f4f4f4;     /* สีพื้นหลังเว็บ */
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* หัวข้อหลัก */
+        h1 {
+            text-align: center; /* จัดให้อยู่ตรงกลาง */
+            color: #333;
+        }
+
+        /* คอนเทนเนอร์สำหรับหุ้มการ์ดสถานที่ท่องเที่ยว */
+        .container {
+            display: flex;             /* ใช้ Flexbox เพื่อจัดเรียงการ์ด */
+            /* เราใช้ justify-content: center เพื่อให้การ์ดใบเดียว
+               ลอยอยู่ตรงกลางหน้าจอ 
+            */
+            justify-content: center;
+            gap: 20px;                 /* ระยะห่างระหว่างการ์ด (เผื่ออนาคต) */
+        }
+
+        /* สไตล์ของ "การ์ด" (Card) แต่ละใบ */
+        .card {
+            background-color: #ffffff;    /* สีพื้นหลังการ์ด */
+            border-radius: 10px;          /* ทำให้ขอบมน */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+            width: 300px;                 /* กำหนดความกว้าง */
+            overflow: hidden;             /* ซ่อนส่วนที่ล้นออกไป */
+            transition: transform 0.2s;   /* เพิ่ม animation ตอนเอาเมาส์ชี้ */
+        }
+
+        /* เอฟเฟกต์เมื่อเอาเมาส์ชี้การ์ด */
+        .card:hover {
+            transform: scale(1.03); /* ขยายการ์ดเล็กน้อย */
+        }
+
+        /* รูปภาพในการ์ด */
+        .card img {
+            width: 100%;    /* ทำให้รูปเต็มความกว้างการ์ด */
+            height: 200px;  /* กำหนดความสูง */
+            object-fit: cover; /* ทำให้รูปพอดีกับกรอบ โดยไม่เสียสัดส่วน */
+        }
+
+        /* ส่วนเนื้อหาในการ์ด */
+        .card-content {
+            padding: 20px; /* เพิ่มระยะห่างขอบด้านใน */
+        }
+
+        /* หัวข้อของการ์ด */
+        .card h2 {
+            margin-top: 0;
+            color: #0056b3;
+        }
+
+        /* ข้อความอธิบาย */
+        .card p {
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        /* ปุ่ม */
+        .card .button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 10px 15px;
+            text-decoration: none; /* เอาขีดเส้นใต้ลิงก์ออก */
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
 </head>
 <body>
-    แบบฝึกหัด github team555
-</body>
+
+    <h1>✨ สถานที่ท่องเที่ยวน่าสนใจในจังหวัดเลย ✨</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <img src="c:\Users\nawap\Downloads\560000010324101.jpg" alt="เชียงคาน">
+            
+            <div class="card-content">
+                <h2>เชียงคาน</h2>
+                <p>
+                    เมืองเก่าริมแม่น้ำโขงที่มีอายุกว่า 100 ปี 
+                    ผู้คนอพยพมาจากฝั่งหลวงพระบาง ประเทศลาว 
+                    ก่อตั้งเมืองขึ้นที่นี่ เอกลักษณ์คือบ้านไม้เก่าที่เรียงราย
+                    ริมถนนเลียบแม่น้ำโขง
+                    <br><br>
+                    รีวิวส่วนใหญ่ชื่นชมบรรยากาศ "สโลว์ไลฟ์" ที่เงียบสงบ
+                    กิจกรรมยอดนิยมคือตักบาตรข้าวเหนียวตอนเช้า
+                    และเดิน "ถนนคนเดิน" ในตอนเย็น
+                </p>
+                <a href="#" class="button">อ่านเพิ่มเติม</a>
+            </div>
+        </div>
+        
+        </div> </body>
 </html>
